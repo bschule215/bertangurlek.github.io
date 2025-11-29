@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Seite</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
+        }
+
+        
+        nav {
+            background-color: #f2f2f2;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav img {
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e6e6e6;
+        }
+
+        
+        .hero {
+            width: 100%;
+            height: calc(100vh - 80px); 
+            background-image: url('Iphone 17 website.png'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 80px;
+            box-sizing: border-box;
+        }
+
+        
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px black;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            padding: 14px 32px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            background-color: #0071e3;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <img src="apple.png" alt="Apple Logo">
+        <a href="https://www.apple.com/at/store">Store</a>
+        <a href="https://www.apple.com/at/mac/">Mac</a>
+        <a href="https://www.apple.com/at/ipad/">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="https://www.apple.com/at/watch/">Watch</a>
+        <a href="https://www.apple.com/at/airpods/">AirPods</a>
+        <a href="https://www.apple.com/at/services/">Entertainment</a>
+        <a href="https://www.apple.com/at/shop/accessories/all">Zubehör</a>
+        <a href="https://support.apple.com/de-at">Support</a>
+    </nav>
+
+    
+    <div class="hero">
+        <p class="title">iPhone 17</p>
+        <a href="https://www.apple.com/at/shop/buy-iphone/iphone-17" target="_blank">
+            <button class="buy-button">Kaufen</button>
+        </a>
+    </div>
+
+</body>
+</html>
