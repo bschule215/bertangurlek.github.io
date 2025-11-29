@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine website</title>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav img {
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e6e6e6;
+            color: #000;
+        }
+
+        .firstrow {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product-row figure {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-row figure:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .product-row img {
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            color: #333;
+        }
+
+        p.header-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        p.header-subtitle {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        a.compare-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a.compare-link:hover {
+            text-decoration: underline;
+        }
+
+        .product-row a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Testupload für meine Seite</h1>
+    <nav>
+        <img src="apple.png" alt="Apple Logo">
+        <a href="https://www.apple.com/at/store">Store</a>
+        <a href="https://www.apple.com/at/mac/">Mac</a>
+        <a href="https://www.apple.com/at/ipad/">iPad</a>
+        <a href="#">iPhone</a>
+        <a href="https://www.apple.com/at/watch/">Watch</a>
+        <a href="https://www.apple.com/at/airpods/">AirPods</a>
+        <a href="https://www.apple.com/at/services/">Entertainment</a>
+        <a href="https://www.apple.com/at/shop/accessories/all">Zubehör</a>
+        <a href="https://support.apple.com/de-at">Support</a>
+    </nav>
+
+    <p class="header-title">iPhone</p>
+    <p class="header-subtitle">Entdecke alle Modelle.</p>
+    <a class="compare-link" href="https://www.apple.com/at/iphone/compare/">Alle Modelle vergleichen</a>
+
+    <div class="product-row">
+        <a href="file:///C:/Users/User/OneDrive/Dokumente/apple/Iphone%2017%20Pro.html">
+            <figure>
+                <img src="Iphone 17 Pro.png" alt="iPhone 17 Pro">
+                <figcaption>iPhone 17 Pro<br>Innovatives Design für ultimative Performance und Batterielaufzeit</figcaption>
+            </figure>
+        </a>
+        <a href="file:///C:/Users/User/OneDrive/Dokumente/apple/Iphone%20air%20webite.html">
+            <figure>
+                <img src="Iphone Air.png" alt="iPhone Air">
+                <figcaption>iPhone Air<br>Das dünnste iPhone aller Zeiten · Mit Pro Power</figcaption>
+            </figure>
+        </a>
+        <a href="file:///C:/Users/User/OneDrive/Dokumente/apple/Iphone%2017%20website.html">
+            <figure>
+                <img src="Iphone 17.png" alt="iPhone 17">
+                <figcaption>iPhone 17<br>Wunderschön · Noch robuster</figcaption>
+            </figure>
+        </a>
+        <a href="file:///C:/Users/User/OneDrive/Dokumente/apple/iphone%2016%20webiste.html">
+            <figure>
+                <img src="Iphone 16.png" alt="iPhone 16">
+                <figcaption>iPhone 16<br>Unglaubliche Performance · Robustes Design</figcaption>
+            </figure>
+        </a>
+        <a href="file:///C:/Users/User/OneDrive/Dokumente/apple/iphone%2016e%20website.html">
+            <figure>
+                <img src="Iphone 16e.png" alt="iPhone 16e">
+                <figcaption>iPhone 16e<br>Alles, was du brauchst · Zum Preis, den du liebst</figcaption>
+            </figure>
+        </a>
+    </div>
 </body>
+
 </html>
